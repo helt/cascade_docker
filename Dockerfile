@@ -14,7 +14,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -q -y --no-install-recommends
         mysql-server \
         python \
         python-pip \
-        glpk \
+        glpk-utils \
+        perl5 \
         libxml-dom-perl
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -q -y install mysql-server
