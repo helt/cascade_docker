@@ -9,7 +9,7 @@ USER root
 #sudo apt-get -y install mysql-server
 
 RUN apt-get update 
-RUN apt-get DEBIAN_FRONTEND=noninteractive install -q -y --no-install-recommends \
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -q -y --no-install-recommends \
         openjdk-8-jdk \
         mysql-server \
         python \
